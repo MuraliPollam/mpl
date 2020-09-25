@@ -23,6 +23,19 @@ img{
 }
 
 
+.img2{
+	position: absolute; 
+	float: left;
+}
+.content2{
+	left: 0px;
+	float: right;
+	padding: 0 10% 0 50%;
+		height: 100%;
+	width:100%;
+	box-sizing: border-box;
+}
+}
 .timline{
 	position: relative;
 	margin: 20% auto;
@@ -76,20 +89,42 @@ p:before{
 	{
 		width: 100%;
 	}
-
+	.content{
+		padding: 10%;
+		display: block;
+	}
+	.img{
+		padding:0;
+	}
+	.content2{
+		padding:10%; 
+		height: 100%;
+		display:block;
+		left: auto;
+	    float: inherit;
+		height: 100%;
+	    width:100%;
+	    	
+	}
 	.timeline:before{
 		left:20px;
 		height:100%;
+	}
+	.img2{
+	position: relative;
+	padding: 0% ;  
+	float: none;
 	}
 
 	.timeline ul li{
 		display: block;
 		width: 100%;
 	}
+	
 	p{
 		left: 16px;
 	}
 	p:before{
-		left: -5px;
+		left: -8px;
 	}
 }
