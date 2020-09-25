@@ -79,6 +79,7 @@ progress {
 	appearance: none;
 	position: fixed;
 	left: 2%;
+	top:70px;
 	transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
 	width: 100vh;
 	background:#2471A3;
