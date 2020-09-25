@@ -26,7 +26,6 @@ img{
 	left: 0px;
 	float: right;
 	padding: 0 10% 0 50%;
-
 	width:100%;
 	box-sizing: border-box;
 }
@@ -36,16 +35,7 @@ img{
 	margin: 20% auto;
 	width: 100%;
 	padding: 0 20px;
-	height: 100%;
-}
-.timeline:before{
-	content: '';
-	position: absolute;
-	left: 2%;
-	top:70px;
-	width: .5%; 
-	height: 100%;
-	background:#2471A3;
+	height: 90%;
 }
 h3{
 	color: #FFC300;
@@ -81,7 +71,24 @@ p:before{
 	float: left;
 	font-size: 60px;
 	color: #2471A3;
+	height: 70px;
 }
+
+progress {
+	-webkit-appearance: none;
+	appearance: none;
+	position: fixed;
+	left: 2%;
+	transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
+	width: 100vh;
+	background:#2471A3;
+	height: 6px;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #2471A3;
+}
+
 @media only screen and (max-width: 767px)
 {
 	.timline
@@ -102,12 +109,11 @@ p:before{
 		left: auto;
 	    float: inherit;
 		height: 100%;
-	    width:100%;
-	    	
+	    width:100%;  	
 	}
-	.timeline:before{
+	progress{
 		left:20px;
-		height: 100%;
+
 	}
 	.img2{
 	position: relative;
@@ -124,6 +130,6 @@ p:before{
 		left: 16px;
 	}
 	p:before{
-		left: -8px;
+		left: 0%;
 	}
 }
